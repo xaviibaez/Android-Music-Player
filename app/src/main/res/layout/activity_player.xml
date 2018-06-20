@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD54F"
+    tools:context="com.example.pc.mymusic.Player"
+    android:screenOrientation="portrait">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btFB"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btFB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:layout_toStartOf="@+id/btPlay"
+        android:background="@android:drawable/ic_media_rew" />
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@android:drawable/ic_media_pause" />
+
+    <Button
+        android:id="@+id/btFF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:layout_toEndOf="@+id/btPlay"
+        android:background="@android:drawable/ic_media_ff" />
+
+    <Button
+        android:id="@+id/btPv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:layout_toStartOf="@+id/btFB"
+        android:background="@android:drawable/ic_media_previous" />
+
+    <Button
+        android:id="@+id/btNxt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btFF"
+        android:layout_toEndOf="@+id/btFF"
+        android:background="@android:drawable/ic_media_next" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/sbVolumen"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/icona" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:textColor="#212121"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btPlay"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btPlay"
+        android:textSize="12dp"
+        android:textColor="#212121"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <SeekBar
+        android:id="@+id/sbVolumen"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="24dp"
+        android:textSize="12dp"
+        android:textColor="#212121"
+        android:layout_toStartOf="@+id/btFB" />
+
+
+</RelativeLayout>

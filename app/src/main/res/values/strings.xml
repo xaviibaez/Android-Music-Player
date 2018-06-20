@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <string name="title_activity_player">Player</string>
+    <string name="title_activity_navegation">Navegation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="crear_lista">New Playlist</string>
+    <string name="ver_lista">See Playlist</string>
+    <string name="lista">Playlist</string>
+    <string name="alert">New Playlists name:</string>
+    <string name="positivo">Ok</string>
+    <string name="negativo">Cancel</string>
+    <string name="hecho">Done!</string>
+
+</resources>
